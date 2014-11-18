@@ -1,0 +1,48 @@
+{
+  "name": "bower-main-files",
+  "version": "0.0.1",
+  "description": "A command line for get main files from installed bower packages ",
+  "main": "index.js",
+  "bin": {
+      "bower-main-files": "./bin/bower-main-files"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test-all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/booxood/bower-main-files.git"
+  },
+  "keywords": [
+    "bower",
+    "main",
+    "files",
+    "get"
+  ],
+  "author": "Liucw",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/booxood/bower-main-files/issues"
+  },
+  "homepage": "https://github.com/booxood/bower-main-files",
+  "dependencies": {
+      "commander": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "travis-cov": "*",
+    "blanket": "*"
+  },
+  "config": {
+    "blanket": {
+      "pattern": "//^((?!(node_modules|test)).)*$/"
+    },
+    "travis-cov": {
+      "threshold": 90
+    }
+  }
+}

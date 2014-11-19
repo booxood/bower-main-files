@@ -46,6 +46,7 @@ if (program.bower && program.out) {
   } else if (args.length == 1) {
     bmf('.', args[0]);
   } else {
-    console.error('must given out path!');
+    console.error('Must given out path!');
+    console.error('See help : bower-main-files --help');
   }
 }

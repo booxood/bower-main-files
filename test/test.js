@@ -43,4 +43,22 @@ describe('bower-main-files test case', function() {
     })
   });
 
+  it('main some files no found', function(done) {
+    var bower = path.join(__dirname, '/in/main-no-such-file');
+    var out = path.join(__dirname, '/out/c3');
+    bmf(bower, out);
+    dirdiff(bower + '/dist', out + '/main-no-such-file/dist', {
+      fileContents: true
+    }, function(err, diffs) {
+      should.not.exist(err);
+      diffs.should.be.empty;
+      done();
+    })
+  });
+
+  it('no bower.json file', function() {
+    var bower = path.join(__dirname, '/in/main-no-bower.json');
+    var out = path.join(__dirname, '/out/c4');
+    bmf(bower, out);
+  });
 });

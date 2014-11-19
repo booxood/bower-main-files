@@ -1,6 +1,6 @@
 {
   "name": "bower-main-files",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "A command line for get main files from installed bower packages ",
   "main": "index.js",
   "bin": {

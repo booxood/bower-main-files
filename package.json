@@ -1,10 +1,10 @@
 {
   "name": "bower-main-files",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A command line for get main files from installed bower packages ",
   "main": "index.js",
   "bin": {
-      "bower-main-files": "./bin/bower-main-files"
+    "bower-main-files": "./bin/bower-main-files"
   },
   "directories": {
     "test": "test"
@@ -29,13 +29,15 @@
   },
   "homepage": "https://github.com/booxood/bower-main-files",
   "dependencies": {
-      "commander": "*"
+    "commander": "^2.5.0",
+    "mkdirp": "^0.5.0"
   },
   "devDependencies": {
-    "mocha": "*",
-    "should": "*",
-    "travis-cov": "*",
-    "blanket": "*"
+    "blanket": "^1.1.6",
+    "dirdiff": "0.0.1",
+    "mocha": "^2.0.1",
+    "should": "^4.3.0",
+    "travis-cov": "^0.2.5"
   },
   "config": {
     "blanket": {

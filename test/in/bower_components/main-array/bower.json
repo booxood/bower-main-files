@@ -1,0 +1,8 @@
+{
+  "version": "0.0.1",
+  "main": [
+    "dist/file1",
+    "dist/file2"
+  ],
+  "license": "MIT"
+}

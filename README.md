@@ -11,9 +11,33 @@ A command line for get main files from installed bower packages
 npm install -g bower-main-files
 ```
 
+## Example
 
-Example:
-```javascript
+```
+$ bower-main-files --help
+
+  Usage: bower-main-files  
+
+  Options:
+
+    -h, --help          output usage information
+    -V, --version       output the version number
+    -b, --bower <path>  bower components path
+    -o, --out <path>    out path
+
+  Examples:
+
+    $ bower-main-files -b ./bower_components  -o ./bower_main_files
+    $ bower-main-files -b ./bower_components/moment  -o ./bower_main_files
+
+  if not specify parameters, default first argv is bower components path, second argv is out path
+
+    $ bower-main-files ./bower_components  ./bower_main_files
+
+  if in 'bower_components' directory
+
+    $ bower-main-files ./bower_main_files
+    $ bower-main-files moment ./bower_main_files
 
 ```
 
